@@ -7,9 +7,14 @@
         <div class="left-container">
             <button>SIGN-UP NOW!</button>
         </div>
-        <div class="right-container">
+        <div class="right-container d-flex justify-content-center align-items-center">
             <h4>FOLLOW US</h4>
-            <i></i>
+            <img src="../img/footer-facebook.png" alt="">
+            <img src="../img/footer-twitter.png" alt="">
+            <img src="../img/footer-youtube.png" alt="">
+            <img src="../img/footer-pinterest.png" alt="">
+            <img src="../img/footer-periscope.png" alt="">
+
         </div>
     </div>
 </template>
@@ -19,6 +24,17 @@
 button {
     background-color: rgb(48,48,48);
     border: 2px solid rgb(2,130,249)
+}
+
+.left-container {
+    width: 40%;
+}
+.right-container {
+    width: 60%;
+}
+
+.right-container > * {
+    margin: 0 10px;
 }
    .container-fluid {
     position: relative;
@@ -30,6 +46,6 @@ button {
    }
 
    h4 {
-    color: blue;
+    color: rgb(2,130,249)
    }
 </style>

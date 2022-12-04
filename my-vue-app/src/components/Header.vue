@@ -54,5 +54,8 @@ a {
   text-decoration: none;
 }
 
-
+a:hover {
+  color: rgb(2,130,249);
+  border-bottom: 2px solid rgb(2,130,249);
+}
 </style>
