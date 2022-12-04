@@ -1,0 +1,10 @@
+@use "./variables" as *;
+@use "bootstrap/scss/bootstrap" as *;
+
+#app {
+    top: 0;
+    position: absolute;
+    text-align: center;
+    max-width: 2500px;
+    width: 100vw;
+  }
