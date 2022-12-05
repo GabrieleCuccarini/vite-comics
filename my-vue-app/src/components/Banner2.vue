@@ -58,6 +58,7 @@
 }    
 
 a {
+    margin: 0 10px;
     text-decoration: none;
     color: white;
 }

@@ -43,7 +43,7 @@
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .bg-image {
     position: absolute;
     top: -40px;
@@ -61,14 +61,13 @@
     background-image: url(../img/footer-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    img {
+        position: absolute;
+        top: -50px;
+        width: 450px;
+        aspect-ratio: 1 / 1;
+    }
 }    
-
-.container-fluid img {
-    position: absolute;
-    top: -50px;
-    width: 450px;
-    aspect-ratio: 1 / 1;
-}
 .mini-container {
     height: 300px;
     margin-left: 100px;
@@ -78,11 +77,9 @@
 
 li {
     font-size: 12px;
+    a {
+        text-decoration: none;
+        color:grey
+    }
 }
-
-a {
-    text-decoration: none;
-    color:grey
-}
-
 </style>
