@@ -46,15 +46,14 @@ export default {
 <style scoped lang="scss">
 
 .container-fluid {
-  padding: 20px 0px;
-  border-top: 30px solid black;
+  padding: 10px 0px;
   margin-left: -32px;
   margin-top: -32px;
   width: 100vw;
   }
 .left-side img {
-  width: 100px;
-  height: 100px
+  width: 60px;
+  height: 60px
 }
 
 li {

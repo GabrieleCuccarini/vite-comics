@@ -98,9 +98,9 @@ export default {
 <style scoped lang="scss">
 .bg-image {
     position: absolute;
-    top: -30px;
+    top: -50px;
     right: 150px;
-    width: 430px;
+    width: 450px;
     aspect-ratio: 1 / 1;
     background-size: contain;
     background-image: url(/src/img/dc-logo-bg.png);
@@ -133,5 +133,9 @@ li {
         text-decoration: none;
         color:grey
     }
+}
+
+li a:hover {
+    color: blue !important
 }
 </style>
