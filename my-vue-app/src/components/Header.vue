@@ -37,7 +37,7 @@ export default {
     </div>
     <div class="right-side">
       <ul class="d-flex list-unstyled">
-        <li v-for="titolo in navlinks"><a :href=titolo.url>{{titolo.title}}</a></li>
+        <li v-for="(titolo, i) in navlinks" :key="('card_' + i)"><a :href=titolo.url>{{titolo.title}}</a></li>
       </ul>
     </div>
   </div>

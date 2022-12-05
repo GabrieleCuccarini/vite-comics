@@ -1,42 +1,35 @@
 <script>
-
+export default {
+     data() {
+       return {
+            bannerlinks: [
+            { title: "DIGITAL COMICS",
+              img: "../public/buy-comics-merchandise.png"
+            }, { title: "DC MERCHANDISE",
+              img: "../public/buy-comics-merchandise.png"
+            }, { title: "SUBSCRIPTION",
+              img: "../public/buy-comics-subscriptions.png"
+            }, { title: "COMIC SHOP LOCATOR",
+              img: "../public/buy-comics-shop-locator.png"
+            }, { title: "DC POWER VISA",
+              img: "../public/buy-dc-power-visa.svg"
+            }
+          ]
+     }
+  }
+}
 </script>
 
 <template>
     <div class="container-fluid">
         <div class="container d-flex justify-content-center">
-            <div class="mini-card d-flex align-items-center">
-            <div class="card-img-container">
-                <img src="../img/buy-comics-digital-comics.png" alt="">
+            <div v-for="(card, i) in bannerlinks" key="(card_ + i)" class="mini-card d-flex align-items-center">
+                <div class="card-img-container">
+                    <img :src="card.img" alt="">
+                </div>
+                <a href="#">{{card.title}}</a>
             </div>
-            <a href="#">DIGITAL COMICS</a>
         </div>
-        <div class="mini-card d-flex align-items-center">
-            <div class="card-img-container">
-                <img src="../img/buy-comics-merchandise.png" alt="">
-            </div>
-            <a href="#">DC MERCHANDISE</a>
-        </div>
-        <div class="mini-card d-flex align-items-center">
-            <div class="card-img-container">
-                <img src="../img/buy-comics-subscriptions.png" alt="">
-            </div>
-            <a href="#">SUBSCRIPTION</a>
-        </div>
-        <div class="mini-card d-flex align-items-center">
-            <div class="card-img-container">
-                <img src="../img/buy-comics-shop-locator.png" alt="">
-            </div>
-            <a href="#">COMIC SHOP LOCATOR</a>
-        </div>
-        <div class="mini-card d-flex align-items-center">
-            <div class="card-img-container">
-                <img src="../img/buy-dc-power-visa.svg" alt="">
-            </div>
-            <a href="#">DC POWER VISA</a>
-        </div>
-        </div>
-        
     </div>
 </template>
 

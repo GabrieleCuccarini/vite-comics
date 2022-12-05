@@ -1,9 +1,9 @@
 <template>
-  <Header></Header>
-  <Banner></Banner>
-  <Banner2></Banner2>
-  <Main></Main>
-  <Footer></Footer>
+  <Header />
+  <Banner />
+  <Banner2 />
+  <Main />
+  <Footer />
 </template>
 
 <script setup>

@@ -1,42 +1,94 @@
 <script>
-
+export default {
+     data() {
+       return {
+            mainlinks1: [
+            { title: "Characters",
+              url: "/"
+            } ,{ title: "Comics",
+              url: "/"
+            }, { title: "Movies",
+              url: "/"
+            }, { title: "TV",
+              url: "/"
+            }, { title: "Games",
+              url: "/"
+            }, { title: "Videos",
+              url: "/"
+            }
+        ],
+            mainlinks2: [
+            { title: "Shop DC",
+              url: "/"
+            } ,{ title: "Shop DC Collectibles",
+              url: "/"
+            }
+        ], 
+            mainlinks3: [
+            { title: "Terms of use",
+              url: "/"
+            } ,{ title: "Privacy Policy(New)",
+              url: "/"
+            }, { title: "Ad choices",
+              url: "/"
+            }, { title: "Advertising",
+              url: "/"
+            }, { title: "Jobs",
+              url: "/"
+            }, { title: "Subscriptions",
+              url: "/"
+            }, { title: "Talent Workshops",
+              url: "/"
+            }, { title: "CPSC Certificates",
+              url: "/"
+            }, { title: "Ratings",
+              url: "/"
+            }, { title: "Shop Help",
+              url: "/"
+            }, { title: "Contact Us",
+              url: "/"
+            }
+        ],  
+            mainlinks4: [
+            { title: "DC",
+              url: "/"
+            } ,{ title: "MAD Magazine",
+              url: "/"
+            }, { title: "DC Kids",
+              url: "/"
+            }, { title: "DC Universe",
+              url: "/"
+            }, { title: "DC Power Visa",
+              url: "/"
+            }
+        ]
+     }
+  }
+}
 </script>
 
 <template>
     <div class="container-fluid">
         <div class="mini-container d-flex flex-column flex-wrap">
             <ul class="list-unstyled"><h4>DC COMICS</h4>
-                <li><a href="#">Characters</a></li>
-                <li><a href="#">Comics</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">TV</a></li>
-                <li><a href="#">Games</a></li>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">News</a></li>
+                <li v-for="litem in mainlinks1">
+                    <a :href=litem.url>{{litem.title}}</a>
+                </li>
             </ul>
             <ul class="list-unstyled"><h4>SHOP</h4>
-                <li><a href="#">Shop DC</a></li>
-                <li><a href="#">Shop DC Collectibles</a></li>
+                <li v-for="litem in mainlinks2">
+                    <a :href=litem.url>{{litem.title}}</a>
+                </li>
             </ul>
             <ul class="list-unstyled"><h4>DC</h4>
-                <li><a href="#">Terms of use</a></li>
-                <li><a href="#">Privacy policy(New)</a></li>
-                <li><a href="#">Ad choices</a></li>
-                <li><a href="#">Advertising</a></li>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Subscriptions</a></li>
-                <li><a href="#">Talent Workshops</a></li>
-                <li><a href="#">CPSC Certificates</a></li>
-                <li><a href="#">Ratings</a></li>
-                <li><a href="#">Shop Help</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li v-for="litem in mainlinks3">
+                    <a :href=litem.url>{{litem.title}}</a>
+                </li>
             </ul>
             <ul class="list-unstyled"><h4>SITES</h4>
-                <li><a href="#">DC</a></li>
-                <li><a href="#">MAD Magazine</a></li>
-                <li><a href="#">DC Kids</a></li>
-                <li><a href="#">DC Universe</a></li>
-                <li><a href="#">DC Power Visa</a></li>
+                <li v-for="litem in mainlinks4">
+                    <a :href=litem.url>{{litem.title}}</a>
+                </li>
             </ul>
         </div>
         <div class="bg-image" alt=""></div>
@@ -46,7 +98,7 @@
 <style scoped lang="scss">
 .bg-image {
     position: absolute;
-    top: -40px;
+    top: -30px;
     right: 150px;
     width: 430px;
     aspect-ratio: 1 / 1;

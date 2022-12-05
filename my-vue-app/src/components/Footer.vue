@@ -1,5 +1,17 @@
 <script>
-
+export default {
+     data() {
+       return {
+            footerlinks: [
+            { img: "../public/footer-facebook.png"}, 
+            { img: "../public/footer-twitter.png"}, 
+            { img: "../public/footer-youtube.png"}, 
+            { img: "../public/footer-pinterest.png"}, 
+            { img: "../public/footer-periscope.png"}, 
+          ]
+     }
+  }
+}
 </script>
 
 <template>
@@ -9,12 +21,7 @@
         </div>
         <div class="right-container d-flex justify-content-center align-items-center">
             <h4>FOLLOW US</h4>
-            <img src="../img/footer-facebook.png" alt="">
-            <img src="../img/footer-twitter.png" alt="">
-            <img src="../img/footer-youtube.png" alt="">
-            <img src="../img/footer-pinterest.png" alt="">
-            <img src="../img/footer-periscope.png" alt="">
-
+            <img v-for="icon in footerlinks" :src=icon.img>
         </div>
     </div>
 </template>
